@@ -1,0 +1,101 @@
+/* reset page */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* my freamWork */
+.df-ccc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* style */
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(241, 121, 7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.title{
+    margin-top: 100px;
+    text-align: center;
+}
+.title h1{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.title p{
+    font-size: 20px;
+}
+.container{
+    gap: 20px;
+    margin: 10px 0;
+    padding: 30px 0;
+    border: 2px solid #000;
+    border-radius: 5px;
+    min-width: 300px;
+}
+
+.container .start h3{
+    margin-bottom: 15px;
+}
+.container  button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #000;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.container .start button:hover ,.range button:hover{
+    background-color: #fff;
+    color: black;
+}
+.range , .start-the-game{
+    display: none;
+    text-align: center;
+}
+.range input{
+    width: 20%;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 15x;
+    margin: 10px 0;
+}
+.range input:active{
+    outline: none;
+}
+
+#range-msg{
+    display: none;
+    color: red;
+    font-weight: 700;
+}
+#result{
+    display: none ;
+    font-size: 20px;
+    color: #fff;
+    margin: 5px 0;
+}
+.guess input {
+    margin: 5px 0;
+    border: 2px solid #000;
+    border-radius: 15px;
+    padding: 5px 10px;
+    width: 150px;
+    transition: width 0.3s ease-in-out;
+}
+.guess input:focus{
+    width: 220px;
+}
+#again{
+    display: none;
+}

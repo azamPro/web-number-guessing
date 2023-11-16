@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number guessing</title>
+
+</head>
+<body>
+    <div class="title" >
+        <h1>Guessing game</h1>
+        <p>Weclome to the game!</p>
+    </div>
+    
+    <div class="container df-ccc">
+        <div class="start df-ccc" id="start">
+            <h3>are you ready?</h3>
+            <button onclick="start('start')">yes! I'm</button>
+        </div>
+        <div class="range df-ccc" id="range">
+            <h3>choose a range</h3>
+            <div class="range-number">
+                <input type="number" placeholder="min" id="min" >
+                <input type="number" placeholder="max" id="max" >
+                <br>
+                <label for="" id="range-msg" style="color: red; font-size: 18px;">....</label>
+
+            </div>
+            <button onclick="start('range')">start the guessing</button>
+        </div>
+        <div class="start-the-game df-ccc" id="start-the-game">
+            <h3>start the guessing</h3>
+            <div class="guess">
+                <input type="number" placeholder="guess the number" id="guess">
+                <br>
+                <label for="" id="result"></label>
+            </div>
+            <button onclick="isCorrect()" id="guess">guess</button>
+            <button onclick="reset()" id="again">again</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
