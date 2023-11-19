@@ -30,6 +30,6 @@ This project showcases my skills in front-end web development and highlights my 
 
 ## Try it Out
 
-[https://azamplatform.com/XO-game/]
+[[https://azamplatform.com/XO-game/](https://azamplatform.com/number-guessing/)]
 
 I hope you enjoy playing the Number Guessing Game as much as I enjoyed creating it! If you have any feedback or suggestions, feel free to reach out.
