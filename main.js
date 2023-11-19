@@ -92,6 +92,6 @@ function reset() {
     document.getElementById('start-the-game').style.display = 'none'
     document.getElementById('again').style.display = 'none';
     document.getElementById('title-again').style.display = 'none';
-    document.getElementById('start').style.display = 'block'
+    document.getElementById('start').style.display = 'flex'
     start()
 }
