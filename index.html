@@ -20,23 +20,28 @@
         </div>
         <div class="range df-ccc" id="range">
             <h3>choose a range</h3>
+            <div class="suggested">
+                <button onclick="setRange(1, 10)">1-10</button>
+                <button onclick="setRange(1, 100)">1-100</button>
+                <button onclick="setRange(1, 1000)">1-1000</button>
+                <h3>or enter your range:</h3>
+            </div>
             <div class="range-number">
-                <input type="number" placeholder="min" id="min" >
-                <input type="number" placeholder="max" id="max" >
+                <input type="number" placeholder="min"  id="min" lang="en" onwheel="return false;" inputmode="numeric">
+                <input type="number" placeholder="max" id="max" lang="en" onwheel="return false;" inputmode="numeric">
                 <br>
                 <label for="" id="range-msg" style="color: red; font-size: 18px;">....</label>
-
+                <button onclick="start('range')">start the guessing</button>
             </div>
-            <button onclick="start('range')">start the guessing</button>
         </div>
         <div class="start-the-game df-ccc" id="start-the-game">
-            <h3>start the guessing</h3>
+            <h3 id="title-again">start the guessing</h3>
             <div class="guess">
                 <input type="number" placeholder="guess the number" id="guess">
                 <br>
                 <label for="" id="result"></label>
             </div>
-            <button onclick="isCorrect()" id="guess">guess</button>
+            <button onclick="isCorrect()" id="guess-button">guess</button>
             <button onclick="reset()" id="again">again</button>
         </div>
     </div>
