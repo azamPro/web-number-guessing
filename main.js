@@ -1,6 +1,7 @@
 let min,max;
 let randomNumber;
 let guessNumber;
+let count = 1;
 
 
 // start function
@@ -63,7 +64,7 @@ function isCorrect() {
     guessNumber = document.getElementById('guess').value
     
     if(guessNumber == randomNumber) {
-        alert('you win!! congration')
+        alert(`you win!! congration \n you has ${count} try`)
         document.getElementById('title-again').innerHTML = 'start again?';
         document.getElementById('guess').style.display = 'none';
         document.getElementById('guess-button').style.display = 'none';
@@ -73,9 +74,11 @@ function isCorrect() {
     } else if(guessNumber < randomNumber) {
         document.getElementById('result').style.display = 'block'
         document.getElementById('result').innerHTML = `you have to guess higher then ${guessNumber}`
+        count++
     } else if(guessNumber > randomNumber) {
         document.getElementById('result').style.display = 'block'
         document.getElementById('result').innerHTML = `you have to guess lower then ${guessNumber}`
+        count++
     }
 }
 //reset function
@@ -84,6 +87,8 @@ function reset() {
     max= ''
     randomNumber = ''
     guessNumber = ''
+    count=1
+
     // reset all style and value
     document.getElementById('guess').value = ''
     document.getElementById('result').style.display = 'none'
